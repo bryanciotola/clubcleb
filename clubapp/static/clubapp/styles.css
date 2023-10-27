@@ -1,0 +1,124 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #F5DEB3;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-landing-image {
+    max-width: 100%;
+    flex-grow: 1;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto; 
+}
+
+#countdown-box {
+    max-width: 250px;  /* Increased width slightly for better fit */
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#countdown-box h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.8em;  /* Reduced font size a little more */
+}
+
+#countdown {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 6px;  /* Reduced gap slightly */
+}
+
+.time-unit {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 3px;  /* Reduced padding for better fit */
+    border-radius: 5px;
+}
+
+.time-unit span {
+    font-size: 0.8em;  /* Reduced font size a little more */
+    font-weight: bold;
+    color: #FFF;
+}
+
+.time-unit label {
+    margin-top: 2px;  /* Reduced margin */
+    color: #FFF;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 0.6em;  /* Reduced font size a little more */
+}
+
+@media (min-width: 768px) {
+    .time-unit {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #eaeaea;
+}

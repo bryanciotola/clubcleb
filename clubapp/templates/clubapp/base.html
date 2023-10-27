@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cleb Cooks Club{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'clubapp/styles.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Countdown Timer -->
+  <a class="navbar-brand" href="#">Cleb Cooks</a>
+  <div id="countdown-box">
+      <div id="countdown">
+        <div class="time-unit">
+          <span id="days"></span>
+          <label>Days</label>
+        </div>
+        
+      <div class="time-unit">
+        <span id="hours"></span>
+        <label>Hours</label>
+      </div>
+        
+      <div class="time-unit">
+        <span id="minutes"></span>
+        <label>Minutes</label>
+      </div>
+        
+      <div class="time-unit">
+        <span id="seconds"></span>
+        <label>Seconds</label>
+      </div>
+        
+    </div>
+  </div>
+  <!-- End Countdown Timer -->
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Adjusted to align nav items to the right -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/books">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/current">Current</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pics">Pics</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+    <div class="container mt-4 mb-4 flex-grow-1 d-flex flex-column justify-content-between">
+        {% block content %}
+        <!-- Default content -->
+        {% endblock %}
+    </div>
+
+    <footer class="text-center py-3">
+        {% block footer %}
+        <p>Cleb Cooks 2023</p>
+        {% endblock %}
+    </footer>
+
+    <!-- JS links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

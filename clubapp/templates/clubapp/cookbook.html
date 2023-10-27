@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ cookbook.title }}</title>
+</head>
+<body>
+    <h1>{{ cookbook.title }}</h1>
+    <img src="{{ cookbook.book_image.url }}" alt="{{ cookbook.title }}">
+    <h2>Selected Recipes:</h2>
+    {% for recipe in recipes %}
+    <div>
+        <h3>{{ recipe.title }}</h3>
+        <img src="{{ recipe.recipe_image.url }}" alt="{{ recipe.title }}">
+    </div>
+    {% endfor %}
+</body>
+</html>
