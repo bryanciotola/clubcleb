@@ -5,9 +5,41 @@
 
 
 
-<div class="content-section">
-    <img src="{% static 'clubapp/landing_image.png' %}" alt="Description" class="home-landing-image">
-</div>
+  <div class="row">
+      <div class="col-12">
+  <!-- Countdown Timer -->
+  <div id="countdown-box">
+      <div id="countdown">
+        <div class="time-unit">
+          <span id="days"></span>
+          <label>Days</label>
+        </div>
+
+      <div class="time-unit">
+        <span id="hours"></span>
+        <label>Hours</label>
+      </div>
+
+      <div class="time-unit">
+        <span id="minutes"></span>
+        <label>Minutes</label>
+      </div>
+
+      <div class="time-unit">
+        <span id="seconds"></span>
+        <label>Seconds</label>
+      </div>
+
+    </div>
+  </div>
+      </div>
+  </div>
+  <!-- End Countdown Timer -->
+  <div class="row">
+    <div class="col-12">
+      <img src="{% static 'clubapp/landing_image.png' %}" alt="Description" class="home-landing-image">
+    </div>
+  </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {

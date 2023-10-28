@@ -27,9 +27,10 @@ body {
 }
 
 #countdown-box {
-    max-width: 250px;  /* Increased width slightly for better fit */
+    max-width: 300px;  /* Increased width slightly for better fit */
     margin: 10px auto;
-    padding: 5px 10px;
+    margin-left:0px;
+    padding: 5px 30px;
     border: 2px solid #333;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -95,7 +96,7 @@ h1 {
 }
 
 .navbar-logo {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
 }
 
